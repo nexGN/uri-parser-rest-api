@@ -19,11 +19,15 @@ class UriParser
         . self::FRAGMENT_REGEXP_PART
         . '$/';
 
-    private const USER_INFO_REGEXP = '(?:(?P<user_info>[^@]+)@)?';
-    private const HOST_REGEXP = '(?P<host>[^@:]+)';
-    private const PORT_REGEXP = '(?::(?P<port>\d+))?';
+    private const USERINFO_REGEXP_PART = '(?:(?P<user_info>[^@]+)@)?';
+    private const HOST_REGEXP_PART = '(?P<host>[^@:]+)';
+    private const PORT_REGEXP_PART = '(?::(?P<port>\d+))?';
 
-    private const AUTHORITY_REGEXP = '/^' . self::USER_INFO_REGEXP . self::HOST_REGEXP . self::PORT_REGEXP . '$/';
+    private const AUTHORITY_REGEXP = '/^'
+        . self::USERINFO_REGEXP_PART
+        . self::HOST_REGEXP_PART
+        . self::PORT_REGEXP_PART
+    . '$/';
 
     /**
      * @param string $uriString
