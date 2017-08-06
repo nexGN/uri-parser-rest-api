@@ -1,6 +1,6 @@
 ## Uri Parser Api (UPA) 
 
-### Instalation
+### Installation
 
 ```
 git clone git@github.com:nexGN/uri-parser-rest-api.git
