@@ -24,6 +24,7 @@ class UriResolver
     /**
      * @param string $uriString
      * @return Uri
+     * @throws \InvalidArgumentException
      */
     public function resolve(string $uriString): Uri
     {
