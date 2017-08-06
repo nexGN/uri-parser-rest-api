@@ -31,7 +31,6 @@ $app->post('/uris', function (Request $request) use ($app) {
         return $app->json(['error' => $exception->getMessage()], '422');
     }
 
-
     return $app->json($uri->getValue());
 });
 
