@@ -64,46 +64,6 @@ class Uri implements ValueObject
     }
 
     /**
-     * @return Scheme
-     */
-    public function getScheme(): Scheme
-    {
-        return $this->scheme;
-    }
-
-    /**
-     * @return Authority
-     */
-    public function getAuthority(): ?Authority
-    {
-        return $this->authority;
-    }
-
-    /**
-     * @return Path
-     */
-    public function getPath(): Path
-    {
-        return $this->path;
-    }
-
-    /**
-     * @return Query
-     */
-    public function getQuery(): ?Query
-    {
-        return $this->query;
-    }
-
-    /**
-     * @return Fragment
-     */
-    public function getFragment(): ?Fragment
-    {
-        return $this->fragment;
-    }
-
-    /**
      * @return array
      */
     public function getValue() : array
