@@ -1,6 +1,6 @@
-# URI-PARSER-REST_API
+## Uri Parser Api (UPA) 
 
-## INSTALLATION
+### Instalation
 
 ```
 git clone git@github.com:nexGN/uri-parser-rest-api.git
@@ -8,13 +8,13 @@ cd uri-parser-rest-api
 composer install
 ```
 
-## HOW TO RUN
+### How to run
 
 ```
 php -S localhost:8082 web/index.php
 ```
 
-## HOW TO USE
+### How to use
 
 ```
 curl \
