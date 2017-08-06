@@ -35,9 +35,6 @@ class AuthorityTest extends TestCase
         $authority = new Authority($validAuthority['host'], $validAuthority['user_info'], $validAuthority['port']);
 
         $this->assertEquals($validValue, $authority->getValue());
-        $this->assertEquals($validAuthority['host'], $authority->getHost());
-        $this->assertEquals($validAuthority['user_info'], $authority->getUserInfo());
-        $this->assertEquals($validAuthority['port'], $authority->getPort());
         $this->assertEquals($validAuthority['string'], (string) $authority);
     }
 

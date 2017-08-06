@@ -36,30 +36,6 @@ class Authority implements ValueObject
     }
 
     /**
-     * @return UserInfo
-     */
-    public function getUserInfo(): ?UserInfo
-    {
-        return $this->userInfo;
-    }
-
-    /**
-     * @return Host
-     */
-    public function getHost(): Host
-    {
-        return $this->host;
-    }
-
-    /**
-     * @return Port
-     */
-    public function getPort(): ?Port
-    {
-        return $this->port;
-    }
-
-    /**
      * @return array
      */
     public function getValue(): array
