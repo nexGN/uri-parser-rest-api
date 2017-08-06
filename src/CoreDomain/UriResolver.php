@@ -12,11 +12,19 @@ class UriResolver
      */
     private $uriParser;
 
+    /**
+     * UriResolver constructor.
+     * @param UriParser $uriParser
+     */
     public function __construct(UriParser $uriParser)
     {
         $this->uriParser = $uriParser;
     }
 
+    /**
+     * @param string $uriString
+     * @return Uri
+     */
     public function resolve(string $uriString): Uri
     {
         $uriParts = $this->uriParser->parse($uriString);
