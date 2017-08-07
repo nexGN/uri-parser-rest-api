@@ -42,7 +42,6 @@ class UriParser
 
         $parsedData = $this->filterMatches($matches);
 
-        $authority = null;
         if (isset($parsedData['authority']) && $parsedData['authority']) {
             if (preg_match(self::AUTHORITY_REGEXP, $parsedData['authority'], $authorityMatches)) {
                 $parsedData += $this->filterMatches($authorityMatches);

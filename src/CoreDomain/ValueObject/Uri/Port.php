@@ -8,6 +8,7 @@ use UPA\GenericDomain\ValueObject;
 class Port implements ValueObject
 {
     private const PORT_REGEXP = "/^0$|^[1-9]\d{0,4}$/";
+
     /**
      * @var int
      */
